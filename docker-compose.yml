@@ -2,7 +2,7 @@ version: "3"
 services:
         pydev:
                 container_name: pydev1
-                image: "ubuntu:latest"
+                image: "fnndsc/ubuntu-python3"  # based on ubuntu:latest
                 ports:
                         - "8000:8000"
                 volumes:
@@ -10,3 +10,4 @@ services:
                 stdin_open: true
                 tty: true
                 working_dir: /opt/code
+                entrypoint: /bin/bash
