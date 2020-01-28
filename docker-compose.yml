@@ -4,7 +4,7 @@ services:
                 container_name: pydev1
                 image: "ubuntu:latest"
                 ports:
-                        - "80:80"
+                        - "8000:8000"
                 volumes:
                         - ./web:/opt/code
                 stdin_open: true
