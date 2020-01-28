@@ -6,7 +6,7 @@ services:
                 ports:
                         - "8000:8000"
                 volumes:
-                        - ./web:/opt/code
+                        - .:/opt/code
                 stdin_open: true
                 tty: true
                 working_dir: /opt/code
