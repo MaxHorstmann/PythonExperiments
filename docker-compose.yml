@@ -1,0 +1,12 @@
+version: "3"
+services:
+        pydev:
+                container_name: pydev1
+                image: "ubuntu:latest"
+                ports:
+                        - "80:80"
+                volumes:
+                        - ./web:/opt/code
+                stdin_open: true
+                tty: true
+                working_dir: /opt/code
