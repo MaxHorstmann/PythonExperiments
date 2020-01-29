@@ -2,9 +2,9 @@ version: "3"
 services:
         pydev:
                 container_name: pydev1
-                image: "fnndsc/ubuntu-python3"  # based on ubuntu:latest
+                image: "maxhorstmann/pythondev"
                 ports:
-                        - "8000:8000"
+                        - "9090:9090"
                 volumes:
                         - .:/opt/code
                 stdin_open: true
